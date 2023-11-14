@@ -3,7 +3,11 @@ import Navbar from '../components/Navbar';
 import PageContent from '../components/PageContent';
 import PageTitle from '../components/PageTitle';
 
-export default function Home() {
+export default async function Home() {
+
+  let { data: cards, error} = await supabase.from('cards').select()
+
+  console.log('cards', cards)
 
   return (
 

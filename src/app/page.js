@@ -2,9 +2,16 @@ import Image from 'next/image';
 import Navbar from './components/Navbar';
 import PageContent from './components/PageContent';
 import PageTitle from './components/PageTitle';
-import Card from './components/PageCard';
 
-export default function Home() {
+import { createClient } from '@supabase/supabase-js';
+
+const supabase = createClient('https://ipmdribtzjpprqflymjw.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwbWRyaWJ0empwcHJxZmx5bWp3Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5OTg1MDEzMiwiZXhwIjoyMDE1NDI2MTMyfQ.F7PfkbQvyBos3JaoOgNTk2QjyoMPi-4GQI08s7tj7A4')
+
+export const revalidate = 0
+
+export default async function Home() {
+
+  const { data: cards, error } = await supabase.from('cards').select()
 
   return (
 
@@ -29,11 +36,13 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="flex justify-center items-center h-screen">
+      <div className="transform flex justify-center items-center h-screen hover">
 
-        <Card title="First Card" subtitle="WIP" description="This is currently a WIP."/>
-        <Card title="Second Card" subtitle="Also a WIP" description="Also currently a WIP."/>
-        <Card title="Third Card" subtitle="This is also a WIP" description="This might be a WIP."/>
+        {cards.map((card) => (
+
+          <card title={card.title} subtitle={card.subtitle} description={card.description}/>
+        
+        ))}
 
       </div>
 
