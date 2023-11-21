@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar';
 import PageContent from '../components/PageContent';
 import PageTitle from '../components/PageTitle';
+import Footer from '../components/Footer';
 
 export default function Home() {
 
@@ -11,7 +12,7 @@ export default function Home() {
 
       <Navbar />
 
-      <PageTitle title="Contact"/>
+      <PageTitle title="Web Development"/>
 
       <div className="text-center">
 
@@ -22,6 +23,10 @@ export default function Home() {
           <PageContent content="Company@businessemail.com"/>
         </div>
 
+      </div>
+      
+      <div>
+        <Footer />
       </div>
 
     </div>

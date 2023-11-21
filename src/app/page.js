@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Navbar from './components/Navbar';
 import PageContent from './components/PageContent';
 import PageTitle from './components/PageTitle';
+import PageCard from './components/PageCard';
+import Footer from './components/Footer';
 
 import { createClient } from '@supabase/supabase-js';
 
@@ -9,9 +11,7 @@ const supabase = createClient('https://ipmdribtzjpprqflymjw.supabase.co', 'eyJhb
 
 export const revalidate = 0
 
-export default async function Home() {
-
-  const { data: cards, error } = await supabase.from('cards').select()
+export default function Home() {
 
   return (
 
@@ -28,22 +28,21 @@ export default async function Home() {
         </div>
         
         <div className="p-5 m-5">
-          <PageContent content="This website showcases our company and our product."/>
+          <PageContent content="This website will be used to show what I learned over my semester at Butte taking web development, linux, and an algorithms class and what I found interesting from each."/>
         </div>
         
-        <div className="p-5 m-5">
-          <PageContent content="We are very proud of our product and have made our product for many years!"/>
-        </div>
+      </div>
+
+      <div className="transform flex justify-center items-center h-screen hover m-6">
+
+        <PageCard />
+        <PageCard />
+        <PageCard />
 
       </div>
-      <div className="transform flex justify-center items-center h-screen hover">
 
-        {cards.map((card) => (
-
-          <card title={card.title} subtitle={card.subtitle} description={card.description}/>
-        
-        ))}
-
+      <div>
+        <Footer />
       </div>
 
     </div>

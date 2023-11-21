@@ -10,26 +10,26 @@ const menuItems = [
     },
     {
 
-        title: 'About',
-        href: '/about',
+        title: 'Classes',
+        href: '/classes',
 
     },
     {
 
-        title: 'Contact',
-        href: '/contact',
+        title: 'Web Development',
+        href: '/webdev',
 
     },
     {
 
-        title: 'Service',
-        href: '/service',
+        title: 'Linux',
+        href: '/linux',
 
     },
     {
 
-        title: 'Product',
-        href: '/product',
+        title: 'Algorithms',
+        href: '/algorithms',
 
     },
 

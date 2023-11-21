@@ -2,12 +2,9 @@ import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import PageContent from '../components/PageContent';
 import PageTitle from '../components/PageTitle';
+import Footer from '../components/Footer';
 
 export default async function Home() {
-
-  let { data: cards, error} = await supabase.from('cards').select()
-
-  console.log('cards', cards)
 
   return (
 
@@ -15,7 +12,7 @@ export default async function Home() {
 
       <Navbar />
 
-      <PageTitle title="About"/>
+      <PageTitle title="Classes"/>
 
       <div className="text-center p-5 m-5">
 
@@ -25,6 +22,10 @@ export default async function Home() {
 
         <div className="p-5 m-5">
           <PageContent content="Years of work here at Company have gone in to perfecting Product."/>
+        </div>
+
+        <div>
+          <Footer />
         </div>
 
       </div>
