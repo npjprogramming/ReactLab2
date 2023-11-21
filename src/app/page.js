@@ -35,9 +35,9 @@ export default function Home() {
 
       <div className="transform flex justify-center items-center h-screen hover m-6">
 
-        <PageCard />
-        <PageCard />
-        <PageCard />
+        <PageCard title="Web Development" subtitle="Subtitle for Web Dev" description="Desc for Web Dev"/>
+        <PageCard title="Linux" subtitle="Subtitle for Linux" description="Desc for Linux"/>
+        <PageCard title="Algorithms" subtitle="Subtitle for Algorithms" description="Desc for Algorithms"/>
 
       </div>
 
