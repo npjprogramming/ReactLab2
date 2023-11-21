@@ -30,8 +30,8 @@ export default function Home() {
 
       </div>
 
-      <div>
-        <Footer />
+      <div className="bg-green-500 p-8">
+        <p></p>
       </div>
       
     </div>

@@ -25,8 +25,8 @@ export default function Home() {
 
       </div>
       
-      <div>
-        <Footer />
+      <div className="bg-neutral-600 p-8">
+        <p></p>
       </div>
 
     </div>

@@ -24,8 +24,8 @@ export default async function Home() {
           <PageContent content="Years of work here at Company have gone in to perfecting Product."/>
         </div>
 
-        <div>
-          <Footer />
+        <div className="bg-green-500 p-8">
+          <p></p>
         </div>
 
       </div>
