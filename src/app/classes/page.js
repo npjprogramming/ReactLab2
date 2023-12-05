@@ -45,7 +45,7 @@ export default async function Home() {
             <PageContent content="Linux"/>
           </div>
           <div className="text-sm p-1">
-            <PageContent content="Linux began with small simple little things like Linux distributions then we actually started installing distros and experimenting with what they can do."/>
+            <PageContent content="Linux began with small simple things like Linux distributions then we actually started installing distros and experimenting with what they can do."/>
           </div>
           <div className="italic p-3">
             <PageContent content="Algorithms"/>
