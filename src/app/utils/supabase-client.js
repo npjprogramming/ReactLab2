@@ -1,5 +1,5 @@
 
-import { createClient } from '@supabase/supabase-js'
+{/*import { createClient } from '@supabase/supabase-js'
 
 export function getClient() {
   const supabase = createClient(<url>, <secret>)
@@ -14,4 +14,4 @@ export async function insertCard(card) {
 export async function findCards() {
   const supabase = getClient()
   // implements https://supabase.com/docs/reference/javascript/select
-}   
+} */}  
