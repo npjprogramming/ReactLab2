@@ -4,6 +4,7 @@ import PageContent from './components/PageContent';
 import PageTitle from './components/PageTitle';
 import PageCard from './components/PageCard';
 import Footer from './components/Footer';
+import MyTable from './components/MyTable'
 
 import { createClient } from '@supabase/supabase-js';
 
@@ -22,28 +23,26 @@ export default function Home() {
       <PageTitle title="Home"/>
 
       <div className="text-center p-5 m-5 border border-solid border-black rounded-lg bg-gradient-to-r from-neutral-300 via-neutral-100 to-neutral-200">
-
         <div className="p-5 m-5">
-          <PageContent content="Hello!"/>
-        </div>
-        
-        <div className="p-5 m-5">
+          <div className="text-lg font-bold underline">
+            <PageContent content="Greetings!"/>
+          </div>
           <PageContent content="This website will be used to show what I learned over my semester at Butte taking web development, linux, and an algorithms class and what I found interesting from each."/>
         </div>
         
       </div>
 
-      <div className="transform flex justify-center items-center h-screen hover m-6">
+      {/*<MyTable />*/}
 
-        <PageCard title="Web Development" subtitle="Subtitle for Web Dev" description="Desc for Web Dev"/>
-        <PageCard title="Linux" subtitle="Subtitle for Linux" description="Desc for Linux"/>
-        <PageCard title="Algorithms" subtitle="Subtitle for Algorithms" description="Desc for Algorithms"/>
+      <div className="transform flex min-h-screen justify-between items-center h-screen m-10">
+
+        <PageCard title="Web Development" subtitle="CSCI-031" description="Beginning foundations of building websites. Languages Used - HTML, CSS, JavaScript"/>
+        <PageCard title="Linux" subtitle="CSCI-025" description="Beginner level Linux commands and distro installation. Languages Used - Linux"/>
+        <PageCard title="Algorithms" subtitle="CSCI-020" description="Beginner programming algorithms. Languages Used - Golang"/>
 
       </div>
 
-      <div className="bg-neutral-600 p-8">
-        <p></p>
-      </div>
+      <Footer />
 
     </div>
 

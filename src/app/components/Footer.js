@@ -1,11 +1,9 @@
-// Currently Unused Component
-
 export default function Footer() {
 
     return (
 
-        <div className="bg-neutral-950 border border-solid border-neutral-950">
-            <p>This text is invisible.</p>
+        <div className="flex justify-center items-end fixed bottom-0 w-full p-6 bg-neutral-600">
+            <p></p>
         </div>
 
     )
