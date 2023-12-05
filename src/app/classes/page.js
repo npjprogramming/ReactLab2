@@ -39,7 +39,7 @@ export default async function Home() {
             <PageContent content="Web Development"/>
           </div>
           <div className="text-sm p-1">
-            <PageContent content="Started slow with learning simple things like HTML and CSS before moving in to more, 'advanced-beginner', things like Git, and putting our content on a server."/>
+            <PageContent content="Started with learning simple things like HTML and CSS before moving in to more, 'advanced-beginner', things like Git, and putting our content on a server."/>
           </div>
           <div className="italic p-3">
             <PageContent content="Linux"/>
