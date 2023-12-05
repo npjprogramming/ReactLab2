@@ -6,10 +6,6 @@ import PageCard from './components/PageCard';
 import Footer from './components/Footer';
 import MyTable from './components/MyTable'
 
-import { createClient } from '@supabase/supabase-js';
-
-const supabase = createClient('https://ipmdribtzjpprqflymjw.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwbWRyaWJ0empwcHJxZmx5bWp3Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5OTg1MDEzMiwiZXhwIjoyMDE1NDI2MTMyfQ.F7PfkbQvyBos3JaoOgNTk2QjyoMPi-4GQI08s7tj7A4')
-
 export const revalidate = 0
 
 export default function Home() {
