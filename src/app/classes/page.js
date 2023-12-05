@@ -51,7 +51,7 @@ export default async function Home() {
             <PageContent content="Algorithms"/>
           </div>
           <div className="text-sm p-1">
-            <PageContent content="Started slow with learning simple things like HTML and CSS before moving in to more, 'advanced-beginner', things like Git, and putting our content on a server."/>
+            <PageContent content="Used Golang to build simple algorithms for our programs."/>
           </div>
         </div>
 
