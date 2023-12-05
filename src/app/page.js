@@ -32,9 +32,9 @@ export default function Home() {
 
       <div className="transform flex min-h-screen justify-between items-center h-screen m-10">
 
-        <PageCard title="Web Development" subtitle="CSCI-031" description="Beginning foundations of building websites. Languages Used - HTML, CSS, JavaScript"/>
-        <PageCard title="Linux" subtitle="CSCI-025" description="Beginner level Linux commands and distro installation. Languages Used - Linux"/>
-        <PageCard title="Algorithms" subtitle="CSCI-020" description="Beginner programming algorithms. Languages Used - Golang"/>
+        <PageCard title="Web Development" subtitle="CSCI-031" description="Beginning foundations of building websites."/>
+        <PageCard title="Linux" subtitle="CSCI-025" description="Beginner level Linux commands and distro installation."/>
+        <PageCard title="Algorithms" subtitle="CSCI-020" description="Beginner level programming algorithms primarily."/>
 
       </div>
 
