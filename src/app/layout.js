@@ -1,6 +1,5 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Theme, ThemePanel } from '@radix-ui/themes'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,10 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Theme>
         <body className={'${inter.className} bg-gradient-to-r from-neutral-200 to-sky-100'}>{children}</body>
-        <ThemePanel />
-      </Theme>
     </html>
   )
 }
